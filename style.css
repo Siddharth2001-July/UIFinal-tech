@@ -1,0 +1,101 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.primary-color {
+  color: #00BCD4;
+}
+.primary-background {
+  background: #bce6ed;
+  border-radius: 40px;
+}
+.btn-primary {
+  background-color: #00BCD4;
+  border-color: white;
+  color: white;
+}
+.btn-outline-primary {
+  border-color: grey;
+  color: black;
+}
+.mt-6p {
+  margin-top: 5%;
+}
+.p-10-5 {
+  padding: 10rem 5rem !important;
+}
+.vl {
+  border-left: 1px solid grey;
+  height: 80%;
+}
+.m-10p {
+  margin: 10%;
+}
+.p-6p {
+  padding: 5%;
+}
+.make-sec-count {
+  background-color: #EDEEF2;
+  border-radius: 200px 0;
+}
+#make-sec-count .card {
+  margin: 2rem 3rem;
+  text-align: left;
+}
+.foot-background {
+  background: #00BCD4;
+  color: white;
+}
+.remove-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.inline-list li {
+  margin-right: 15%;
+  display: inline;
+}
+.remove-def {
+  text-decoration: none;
+  color: white;
+}
+#business-benefits {
+  background-image: url(resources/Dots.png);
+  background-repeat: no-repeat;
+}
+.address {
+  list-style-image: url("resources/address.png");
+  line-height: 2rem;
+}
+.email {
+  list-style-image: url("resources/email.png");
+  line-height: 3rem;
+}
+.phone {
+  list-style-image: url("resources/call.png");
+  line-height: 3rem;
+}
+.count-6 {
+  list-style-image: url("resources/count6.png");
+}
+.count-5 {
+  list-style-image: url("resources/count5.png");
+}
+.count-4 {
+  list-style-image: url("resources/count4.png");
+}
+.count-3 {
+  list-style-image: url("resources/count3.png");
+}
+.count-2 {
+  list-style-image: url("resources/count2.png");
+}
+.count-1 {
+  list-style-image: url("resources/count1.png");
+}
+.tick {
+  list-style-image: url('resources/tick.png');
+  line-height: 3.5rem;
+}
+.tick li {
+  margin-left: 3rem;
+}

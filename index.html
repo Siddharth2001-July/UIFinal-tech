@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTracker</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="container navbar navbar-expand-lg bg-gradient">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <svg width="162" height="29" viewBox="0 0 162 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.56 28.52C19.4 28.52 23.2 26.52 25.92 23.48V13.24H13.2V18.2H20.24V21.4C19.16 22.4 16.92 23.44 14.56 23.44C9.72 23.44 6.2 19.72 6.2 14.68C6.2 9.64 9.72 5.92 14.56 5.92C17.4 5.92 19.68 7.52 20.88 9.4L25.6 6.84C23.6 3.68 20.12 0.879999 14.56 0.879999C6.76 0.879999 0.36 6.24 0.36 14.68C0.36 23.08 6.76 28.52 14.56 28.52Z"
+                        fill="#00BCD4" />
+                    <path
+                        d="M42.3091 28V6.32H50.0691V1.32H28.7891V6.32H36.5891V28H42.3091ZM55.9359 28V15.24C56.7759 14 59.0159 13.04 60.6959 13.04C61.2559 13.04 61.7359 13.08 62.0959 13.16V8.2C59.6959 8.2 57.2959 9.6 55.9359 11.32V8.68H50.8559V28H55.9359ZM81.95 28V15.52C81.95 9.96 77.91 8.2 73.51 8.2C70.47 8.2 67.43 9.16 65.07 11.24L66.99 14.64C68.63 13.12 70.55 12.36 72.63 12.36C75.19 12.36 76.87 13.64 76.87 15.6V18.2C75.59 16.68 73.31 15.84 70.75 15.84C67.67 15.84 64.03 17.56 64.03 22.08C64.03 26.4 67.67 28.48 70.75 28.48C73.27 28.48 75.55 27.56 76.87 26V28H81.95ZM72.79 25.04C70.79 25.04 69.15 24 69.15 22.2C69.15 20.32 70.79 19.28 72.79 19.28C74.43 19.28 76.03 19.84 76.87 20.96V23.36C76.03 24.48 74.43 25.04 72.79 25.04ZM95.9888 28.48C99.9488 28.48 102.349 26.76 103.629 24.96L100.309 21.88C99.3888 23.16 97.9888 23.96 96.2287 23.96C93.1488 23.96 90.9888 21.68 90.9888 18.32C90.9888 14.96 93.1488 12.72 96.2287 12.72C97.9888 12.72 99.3888 13.44 100.309 14.8L103.629 11.68C102.349 9.92 99.9488 8.2 95.9888 8.2C90.0288 8.2 85.7488 12.4 85.7488 18.32C85.7488 24.28 90.0288 28.48 95.9888 28.48ZM125.83 28L117.95 17.44L125.59 8.68H119.35L112.03 17.28V1.32H106.95V28H112.03V23.04L114.35 20.56L119.47 28H125.83ZM137.202 28.48C140.202 28.48 143.242 27.56 145.162 25.8L142.922 22.52C141.682 23.72 139.402 24.44 137.762 24.44C134.482 24.44 132.522 22.4 132.202 19.96H146.562V18.84C146.562 12.52 142.642 8.2 136.882 8.2C131.002 8.2 126.882 12.72 126.882 18.32C126.882 24.52 131.322 28.48 137.202 28.48ZM141.642 16.52H132.122C132.362 14.6 133.722 12.24 136.882 12.24C140.242 12.24 141.522 14.68 141.642 16.52ZM155.311 28V15.24C156.151 14 158.391 13.04 160.071 13.04C160.631 13.04 161.111 13.08 161.471 13.16V8.2C159.071 8.2 156.671 9.6 155.311 11.32V8.68H150.231V28H155.311Z"
+                        fill="black" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Feature One</a></li>
+                            <li><a class="dropdown-item" href="#">Feature Two</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">All Features</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            How It Works
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Step One</a></li>
+                            <li><a class="dropdown-item" href="#">Step Two</a></li>
+                            <li><a class="dropdown-item" href="#">Step Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="btn btn-primary shadow mx-2" id="sign-up" href="">Sign Up</a>
+                <a class="btn btn-outline-primary mx-2" href="">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Section banner -->
+        <section id="banner">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-6 p-5">
+                        <h3 class="display-4">
+                            Monitoring & Time Tracking Software for efficient <span
+                                class="primary-color" id="productivity">Productivity</span>
+                        </h3>
+                        <p class="lead mt-3">
+                            This tool offers not just data, but insights and context so every
+                            company can understand productivity behavior, analyze the findings and plan how to design
+                            their teams for better business outcomes in the future.
+                        </p>
+                        <a href="" class="btn btn-primary p-3">Get Started</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <img src="resources/top.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Section join-over -->
+        <section id="join-over">
+            <div class="container">
+                <div class="row mb-5">
+                    <p class="lead text-center">
+                        Join over 40,000 GTracker Users
+                    </p>
+                    <div class="col">
+                        <img src="resources/bribm.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="resources/brbbb.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="resources/brinstac.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="resources/brAWS.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <img src="resources/brsam.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section who-we-are -->
+        <section id="who-we-are">
+            <div class="container my-5">
+                <div class="primary-background row mb-5">
+                    <div class="mt-6p">
+                        <h3 class="display-3 text-center">Who We Are</h3>
+                        <p class="lead mt-5">
+                            Today’s business operations seek to be as efficient as possible with streamlined workflows,
+                            reduced downtime, increased productivity along with boosting employee’s morale. But the
+                            remote
+                            workers of
+                            today introduce different work patterns and systems usage. Hence, employee monitoring needs
+                            to
+                            be
+                            evolved giving organizations key user behavior insights to understand how work gets
+                            done.
+                        </p>
+                        <p class="lead">
+                            Gtracker is a a SaaS-based productivity monitoring tool for organizations of all sizes. This
+                            tool
+                            offers not just data, but insights and context so every company can understand productivity
+                            behavior, analyze the findings and plan how to design their teams for better business
+                            outcomes
+                            in
+                            the future. This is all done by normalizing the data so companies can find trends, patterns,
+                            and
+                            correlations to gain insight into business processes and how to improve them.
+                        </p>
+                        <p class="lead mb-5">
+                            We believe that employee productivity is something that can always be improved upon, hence
+                            this
+                            tool
+                            help leaders identify employees who are underperforming and why before they become
+                            disengaged.
+                        </p>
+                    </div>
+                    <a class="btn btn-primary py-3" style="border-radius: 0px 0px 40px 40px; width: 100%;" href="/">
+                        Try It Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section business-out -->
+        <section id="business-out" class="mt-5">
+            <div class="container">
+                <h3 class="display-3 text-center">Business Outcomes with GTracker</h3>
+                <!-- ROW 1 -->
+                <div class="row my-5">
+                    <div class="col-lg-6 p-3">
+                        <div class="mt-6p">
+                            <h5 class="display-6">
+                                Analyze Workforce Productivity
+                            </h5>
+                            <ul class="mt-2 p-3 lead">
+                                <li> Understand how employees utilize their time</li>
+                                <li> Identify and compare the amount of time spent on productive and unproductive
+                                    activities.</li>
+                                <li> Discover wasteful practices and distracting environments</li>
+                                <li> Analyze productive behaviors to establish a top performing baseline</li>
+                                <li> Understand employee utilization of time and make needed adjustments</li>
+                                <li> Uncover root cause of spikes in workload</li>
+                                <li> Leverage data insights to rearrange labor hours needed for the same level of
+                                    output.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-3 rounded">
+                        <div class="mt-6p">
+                            <img src="resources/busOut.png" alt="" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW 2 -->
+                <div class="row">
+                    <div class="col-lg-6 p-3">
+                        <img src="resources/phone.png" alt="" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6 p-3 mt-5">
+                        <h5 class="display-6">Measure and Improve Operational Efficiency</h5>
+                        <ul class="lead">
+                            <li> Manage costs with better visibility of application usage</li>
+                            <li> Analyze data insights to design teams for better business outcomes</li>
+                            <li> Look for changes that positively affect employee performance.</li>
+                            <li> Filter percentages of app and website usage by productive and unproductive categories.
+                            </li>
+                            <li> Identify frequently used unproductive apps or websites and set usage limits.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ROW 3 -->
+                <div class="row">
+                    <div class="col-lg-6 p-3 mt-5">
+                        <h6 class="display-6">Effectively Manage Your Remote Workforce</h6>
+                        <ul class="lead">
+                            <li> Get visibility into how remote employees utilize their time</li>
+                            <li> Discover productivity insights across dispersed teams</li>
+                            <li> Identify overworked remote employees to reduce attrition</li>
+                            <li> Compare productivity levels across geographic locations or remote teams.</li>
+                            <li> Discover how much real time is spent using work relevant tools.</li>
+                            <li> Establish remote policies, measure their effectiveness, and make changes for on-going
+                                improvement.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <img src="resources/tab.png" alt="" class="img-fluid rounded">
+                    </div>
+                </div>
+                <!-- ROW 4 -->
+                <div class="row">
+                    <div class="col-lg-6 p-3">
+                        <img src="resources/phone2.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 p-3 mt-5">
+                        <h6 class="display-6">Reporting</h6>
+                        <ul class="lead">
+                            <li> Filter analyses for each day, week, month, and year to analyze trends.</li>
+                            <li> Weigh the effectiveness of new operating procedures and how they impact productivity.
+                            </li>
+                            <li> Understand the major functions each department performs to carry out its duties.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ROW 5 -->
+                <div class="row">
+                    <div class="col-lg-6 p-3 mt-5">
+                        <h6 class="display-6">Enhanced Security</h6>
+                        <ul class="lead">
+                            <li> Secure sensitive information from being shared using screenshot redaction.</li>
+                            <li> Prevent access to distracting websites and terminate unapproved applications.</li>
+                            <li> Review screenshots and video recordings for instances of compliance issues.</li>
+                            <li> Receive notifications when an employee deviates from standard operating procedure.</li>
+                            <li> Configure flags of unsafe screenshots from users’ activities for your review.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <img src="resources/bigtab.png" alt="" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section make-sec-count -->
+        <section id="make-sec-count">
+            <div class="container-fluid mt-11 text-center make-sec-count py-5">
+                <h3 class="display-3 mt-5">
+                    Make Every Second Count
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card p-5">
+                            <ul class="count-1">
+                                <li>
+                                    <h5 class="card-title col"><strong>Automatic time tracking</strong></h5>
+                                    <p class="lead">
+                                        Gtracker starts and stops working when an employee does, from the minute he/she turn
+                                        on the computer, to the minute he/she turn it off. Gtracker tracks and calculates
+                                        productivity automatically so that companies can rely 100% on the data.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card p-5">
+                            <ul class="count-2">
+                                <li>
+                                    <h5 class="card-title col"><strong>Auto Screenshots</strong></h5>
+                                    <p class="lead">
+                                        Capture what’s on employees’ screen automatically and randomly every hour.
+                                        Customize as you need by only activating for certain employees and adjusting intervals
+                                        between screenshots. Gtracker will take a screenshot (regular or blurred) of what
+                                        everyone is working on.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card p-5">
+                            <ul class="count-3">
+                                <li>
+                                    <h5 class="card-title col"><strong>Offline Time Tracking</strong></h5>
+                                    <p class="lead">
+                                        Allow employees to manually add activities completed away from their computer.
+                                        Specify the reasons for absence and put them down as productive, or unproductive. Then,
+                                        easily sort offline activities and approve or deny them.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card p-5">
+                            <ul class="count-4">
+                                <li>
+                                    <h5 class="card-title col"><strong>Cost calculation and project billing</strong>
+                                    </h5>
+                                    <p class="lead">
+                                        Know how much each project cost to the company and how much you should charge
+                                        your customers with the integrated time billing feature. Set each employee’s hourly
+                                        rates, and Gtracker will automatically calculate project costs based on time spent
+                                        working on it.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card p-5">
+                            <ul class="count-5">
+                                <li>
+                                    <h5 class="card-title col"><strong>Work Schedules</strong></h5>
+                                    <p class="lead">
+                                        Plan and schedule employee’s shifts more effectively and 6x faster than when
+                                        using spreadsheets. See a complete daily, weekly, and monthly overview of shifts,
+                                        avoid overstaffing and understaffing, and track the shift workers' productivity with
+                                        ease.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card p-5">
+                            <ul class="count-6">
+                                <li>
+                                    <h5 class="card-title col"><strong>Custom Reports</strong></h5>
+                                    <p class="lead">
+                                        Customize reports with the help of various filters to see the exact data you
+                                        need. For example, use Gtracker Reports to create reports about the company's productivity
+                                        status, websites used at work or time spent on specific tasks.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="/" class="btn btn-primary p-3">View More <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg></a>
+            </div>
+        </section>
+
+        <!-- Section business-benefits -->
+        <section id="business-benefits" class="mt-5">
+            <div class="card m-10p shadow">
+                <div class="row">
+                    <div class="col-lg-6 p-6p">
+                        <h3 class="display-3">
+                            Business Benefits
+                        </h3>
+                        <a href="" class="btn btn-primary p-3">Try It Now <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="lead tick vl mt-4">
+                            <li class="list-item">Boost companies’ overall productivity by 30%</li>
+                            <li class="list-item">Employee contribute 20% more during the same office working hours
+                            </li>
+                            <li class="list-item">Employee monitoring promotes 100% Transparency</li>
+                            <li class="list-item">Reduce Business Operation cost by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Foot -->
+    <footer class="foot-background">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-lg-4">
+                    <h6 class="display-6">
+                        GTracker
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sint in ipsa laudantium hic odit
+                        cupiditate atque ullam, harum repellendus suscipit quisquam nihil, commodi, deleniti assumenda
+                        perferendis molestiae! Quaerat, perferendis.
+                    </p>
+                    <ul class="remove-bullets inline-list">
+                        <li><a href="" class="remove-def"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg></a></li>
+                        <li><a href="" class="remove-def"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                </svg></a></li>
+                        <li><a href="" class="remove-def"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg></a></li>
+                        <li><a href="" class="remove-def"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="display-6">
+                        Quick Links
+                    </h6>
+                    <ul class="remove-bullets">
+                        <li><a href="" class="remove-def">How it works</a></li>
+                        <li><a href="" class="remove-def">Enterprise</a></li>
+                        <li><a href="" class="remove-def">Pricing</a></li>
+                        <li><a href="" class="remove-def">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="display-6">
+                        Terms
+                    </h6>
+                    <ul class="remove-bullets">
+                        <li><a href="" class="remove-def">Terms of uses</a></li>
+                        <li><a href="" class="remove-def">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="display-6">
+                        Contact
+                    </h6>
+                    <ul>
+                        <li class="phone"><a href="" class="remove-def">(406) 555-0120</a></li>
+                        <li class="email"><a href="" class="remove-def">gettracker@gmail.com</a></li>
+                        <li class="address"><a href="" class="remove-def">2972 Westheimer Rd. Santa Ana, Illinois
+                                85486</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &#169 2022</p>
+                </div>
+                <div class="col">
+                    <p class="text-end">All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="less.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
